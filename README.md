@@ -42,24 +42,5 @@ Rodar as migrations
 php artisan migrate
 ```
 
-### Possíveis erros com o banco
-
-#### Connection refused
-#### password authentication failed for user "postgres"
-
-Acesse o container
-```sh
-cd caminho/do/projeto
-docker-compose exec db psql -U postgres acf
-```
-
-Se não conseguir faça
-
-```sh
-sudo rm -rf ./.docker/postgresql/dbdata
-```
-
-Se conectou no db psql com usuario postgres possível que você se confundiu com as portas
-
 Acesse o projeto
 [http://localhost:8000](http://localhost:8000)
