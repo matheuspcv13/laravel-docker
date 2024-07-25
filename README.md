@@ -4,21 +4,20 @@
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone -b laravel-11-with-php-8.3 https://github.com/matheuspcv13/laravel-docker.git nome_projeto
+git clone -b main https://github.com/matheuspcv13/laravel-docker.git nome_projeto
 ```
 ```sh
 cd nome_projeto
 ```
 
-Suba os containers do projeto
-```sh
-docker-compose up --build -d
-```
-
-
 Crie o Arquivo .env
 ```sh
 cp .env.example .env
+```
+
+Suba os containers do projeto
+```sh
+docker-compose up --build -d
 ```
 
 Acesse o container app
